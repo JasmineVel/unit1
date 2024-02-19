@@ -2,7 +2,7 @@ def main():
 numGrades = 0
 gradeTally = 0.0 
 
-#Prompt the user to input the number of grades to be processed
+# Prompt the user to input the number of grades to be processed
 numGrades = int(input("Enter the number of grades to process: ")
 
 # Prompt the user to enter a student name
