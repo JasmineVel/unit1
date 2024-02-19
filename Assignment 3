@@ -1,0 +1,30 @@
+def main():
+numGrades = 0
+gradeTally = 0.0 
+
+#Prompt the user to input the number of grades to be processed
+numGrades = int(input("Enter the number of grades to process: ")
+
+# Prompt the user to enter a student name
+studentName = input("Enter the student names; ")
+
+# Create a conditional loop to process the grades
+counter = 0
+while counter < numGrades:
+    # Prompt to get a numeric grade value from the user
+    grade = float(input(f"Enter assignment grade {counter + 1}: "))
+
+    # add the grade to the grade tally 
+    gradeTally += grade
+
+    # Increment the loop counter
+    counter += 1
+
+# Calculate student average
+studentAverage = gradeTally / numGrades
+
+# Display student average
+print(f"{student named}'s average grade is: {studentAverage:.2f}")
+
+
+main()
