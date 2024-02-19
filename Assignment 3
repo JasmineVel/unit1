@@ -24,7 +24,7 @@ while counter < numGrades:
 studentAverage = gradeTally / numGrades
 
 # Display student average
-print(f"{student named}'s average grade is: {studentAverage:.2f}")
+print(f"{studentName}'s average grade is: {studentAverage:.2f}")
 
 
 main()
