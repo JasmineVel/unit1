@@ -1,7 +1,10 @@
 print("Your color choices are red, blue, green, white, or yellow.")
 userColor = input("Enter a color from the list above: ")
+
 color = userColor.lower()
+
 validColor = True
+
 if color == "red":
         spanishColor = "rojo"
 elif color == "blue":
@@ -15,6 +18,6 @@ elif color == "yellow":
 else:
         validColor = False
 if validColor:
-    print("English color:", color, "Spanish color:", + spanishColor)
+    print("English color:", color, "Spanish color:", spanishColor)
 else:
     print("That is not a valid color for this program. Ese no es un color válido.")
