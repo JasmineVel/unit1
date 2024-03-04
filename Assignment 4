@@ -3,7 +3,7 @@ print("Welcome to The Ice Creamery")
 
 # Create a new list variable for storing seven ice cream flavors
 flavorsList = ["Vanilla", "Chocolate", "Strawberry", 
-                "Pistachio", "Butter Pecan", "Cookie Dough", "Neapolitan", "Peanut Butter Cup Magic"]
+                "Pistachio", "Butter Pecan", "Cookie Dough", "Neapolitan", "Blueberry Crunch"]
 
 # Change the name of one flavor in the list of flavors
 flavorsList[1] = "Cotton Candy"
