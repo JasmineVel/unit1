@@ -1,0 +1,53 @@
+# Display a welcome message on the screen
+print("Welcome to The Ice Creamery")
+
+# Create a new list variable for storing seven ice cream flavors
+flavorsList = ["Vanilla", "Chocolate", "Strawberry", 
+                "Pistachio", "Butter Pecan", "Cookie Dough", "Neapolitan", "Peanut Butter Cup Magic"]
+
+# Change the name of one flavor in the list of flavors
+flavorsList[1] = "Cotton Candy"
+
+# Use a built-in list operation to append a new flavor to the end of the list
+flavorsList.append("Bubble Gum")
+
+# Use a built-in list operation to sort the flavors list in alphabetical order
+flavorsList.sort()
+
+# Store the number of flavors in the list in a variable and display the number of flavors
+flavorsCount = len(flavorsList)
+print("Number of flavors:", num_flavors)
+
+# Loop through each flavor in the list using a FOR loop to disply the number and name for each item in the list
+for index, flavor in enumerate(flavorsList):
+    print ("Flavor #{}, {}".format(index + 1, flavor))
+    
+# Define dictionaries to hold the prices and descriptions for each cone size
+conePrices={"S": "$1.50", "M": "$2.50", "L": "$3.50"}
+coneSizes={"S":"smallish", "M": "more for me", "L": "Larger than life"}
+
+#Prompt the user to enter a cone size (S, M, or L). Store their choice in a variable (customerSize).
+customerSize = input( "Enter the cone size (S, M, or L: ").upper()
+
+# Use a while to ensure a vaild value was entered.
+while customerSize not in conePrices:
+    print("Invalid cone size. Please enter S, M, or L.")
+    customerSize = input( "Enter the cone size (S, M, or L: ").upper()
+
+# Prompt the user to enter a flavor number. Store their choice in a variable (customerFlavor).
+customerFlavor = int(input("Enter the flavor number: "))
+
+# use an while statement to ensure a vaild value was entered. Display an error message if an invalid value was entered.
+while customerFlavor < 1 or customerFlavor > num_flavors: 
+    print("Invalid flavor number. Please enter a vaild flavor number.") 
+    customerFlavor = int(input("Enter the flavor number: "))
+
+# Display the price, size description, and flavor for their choice
+selected_flavor = flavorList[customerFlavor - 1]
+price = conePrices[customerSize]
+size_description = coneSizes[customerSize]
+
+print("\nYour Order:")
+print("Flavor: {}".format(selected_flavor))
+print("Size: {} ({})".format(customerSize, size_description))
+pirnt("Price: {}".format(price))
