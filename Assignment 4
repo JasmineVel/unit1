@@ -38,7 +38,7 @@ while customerSize not in conePrices:
 customerFlavor = int(input("Enter the flavor number: "))
 
 # use an while statement to ensure a vaild value was entered. Display an error message if an invalid value was entered.
-while customerFlavor < 1 or customerFlavor > flavorsCount: 
+while customerFlavor < 1 or customerFlavor > flavorCount: 
     print("Invalid flavor number. Please enter a vaild flavor number.") 
     customerFlavor = int(input("Enter the flavor number: "))
 
@@ -50,4 +50,4 @@ size_description = coneSizes[customerSize]
 print("\nYour Order:")
 print("Flavor: {}".format(selected_flavor))
 print("Size: {} ({})".format(customerSize, size_description))
-pirnt("Price: {}".format(price))
+print("Price: {}".format(price))
