@@ -24,7 +24,7 @@ hole1 = Golf(1, score, 3)
 hole2 = Golf(2, score, 4)
 hole3 = Golf(3, score, 5)
 
-# Prompt the user to eneter a hole number and score
+# Prompt the user to enter a hole number and score
 try:
     enterHole = int(input("Enter hole number (1, 2, or 3): "))
     score = int(input("Enter your score: "))
