@@ -1,0 +1,46 @@
+class Golf:
+    def __init__(self, hole, score, par):
+        self.hole = hole
+        self.score = score
+        self.par = par
+        self.results = ""  # Initialize the results variable
+
+    def evaluate_and_display_score(self):
+      if self.score > self.par:
+          self.results = "Over Par"
+      elif self.score < self.par:
+          self.results = "Under Par"
+      else:
+          self.results = "At Par"
+      print(f"For Hole {self.hole}: You scored {self.score}, Par is {self.par}, {self.results}")
+
+
+
+# Initialize a score variable to zero.
+score = 0
+
+# Create objects for each hole
+hole1 = Golf(1, score, 3)
+hole2 = Golf(2, score, 4)
+hole3 = Golf(3, score, 5)
+
+# Prompt the user to eneter a hole number and score
+try:
+    enterHole = int(input("Enter hole number (1, 2, or 3): "))
+    score = int(input("Enter your score: "))
+
+    # Use IF statements to evaluate the hole number entered and call the appropriate class method for the appropriate  
+    if enterHole == 1:
+        hole1.score = score
+        hole1.evaluate_and_display_score()
+    elif enterHole == 2:
+        hole2.score = score
+        hole2.evaluate_and_display_score()
+    elif enterHole == 3:
+        hole3.score = score
+        hole3.evaluate_and_display_score()
+    else:
+        print("Invalid hole number. Please enter 1, 2, or 3.")
+
+except ValueError:
+    print("Invalid input. Please enter a valid hole number and score.")
