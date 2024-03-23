@@ -6,14 +6,14 @@ class Golf:
         self.results = ""  # Initialize the results variable
 
     def evaluate_and_display_score(self):
-      if self.score > self.par:
+        if self.score > self.par:
           self.results = "Over Par"
-      elif self.score < self.par:
+        elif self.score < self.par:
           self.results = "Under Par"
-      else:
+        else:
           self.results = "At Par"
-      print(f"For Hole {self.hole}: You scored {self.score}, Par is {self.par}, {self.results}")
-
+        print(
+            f"For Hole {self.hole}: You scored {self.score}, Par is {self.par}, {self.results}")
 
 
 # Initialize a score variable to zero.
