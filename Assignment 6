@@ -10,7 +10,7 @@ def convertTemp(temps, tempScale):
 
 def main():
   # Prompt the user to enter a temperature value and scale.
-  tempEntered = float(inp0ut("Enter a temperature value: "))
+  tempEntered = float(input("Enter a temperature value: "))
   tempScale = input(
       "Enter a single letter to indicate the temperature scale (C or F): ")
 
@@ -30,7 +30,7 @@ def main():
   if tempScale.upper() == "C":
     print(f"{tempEntered:.2f} °C is equal to {converted_temps[1]:.2f} °F")
   elif tempScale.upper() == "F":
-    print(f'{tempEntered:.2f} °F is equal to {converted_temps[0]:.2f} °C")
+    print(f"{tempEntered:.2f} °F is equal to {converted_temps[0]:.2f} °C")
 
 
 if __name__ == "__main__":
